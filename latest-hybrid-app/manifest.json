@@ -1,0 +1,21 @@
+{
+  "name": "Hybrid Web Mobile App",
+  "short_name": "HybridApp",
+  "description": "A template for building hybrid web and mobile apps using HTML, CSS, JS, and PHP.",
+  "start_url": "/index.php",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#007bff",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
