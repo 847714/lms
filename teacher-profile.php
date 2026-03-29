@@ -1,3 +1,9 @@
+<?php
+require_once 'config.php';
+require_once 'helpers.php';
+
+require_login();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -463,10 +469,8 @@
                 </div>
                 <div class="header-actions" style="display: flex; align-items: center; gap: 1.5rem;">
                     <i class="fa-solid fa-bell" style="color: #475569;"></i>
-                    <i class="fa-solid fa-gear" style="color: #475569;"></i>
-                    <div class="user-avatar" style="width: 32px; height: 32px; border-radius: 50%; background-color: #0ea5e9; overflow: hidden; border: 2px solid white; outline: 1px solid #e2e8f0;">
-                        <img src="https://i.pravatar.cc/150?img=33" alt="User" style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
+                    <span style="margin: 0 1rem; font-weight: 500;"><?php echo htmlspecialchars($_SESSION['name']); ?></span>
+                    <a href="logout.php" class="btn" style="background-color: transparent; border: 1px solid #cbd5e1; padding: 0.5rem 1rem; border-radius: 0.375rem; text-decoration: none; color: #0f172a; font-weight: 500; font-size: 0.875rem;">Logout</a>
                 </div>
             </header>
 

@@ -1,3 +1,15 @@
+<?php
+require_once 'config.php';
+require_once 'helpers.php';
+
+require_login();
+
+// Ensure only teachers can access this page
+if ($_SESSION['role'] !== 'teacher') {
+    header('Location: index.php');
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,10 +37,8 @@
         </div>
         <div class="nav-right">
             <i class="fa-solid fa-bell icon-action"></i>
-            <i class="fa-solid fa-circle-question icon-action"></i>
-            <div class="profile-pic">
-                 <img src="https://i.pravatar.cc/150?img=11" alt="Profile" style="width:100%; height:100%; border-radius:50%;">
-            </div>
+            <span style="margin: 0 1rem; font-weight: 500;"><?php echo htmlspecialchars($_SESSION['name']); ?></span>
+            <a href="logout.php" class="btn btn-outline" style="text-decoration: none; padding: 0.5rem 1rem;">Logout</a>
         </div>
     </header>
 
@@ -60,9 +70,9 @@
             </div>
 
             <div class="sidebar-bottom" style="padding: 1.5rem;">
-                <button class="btn btn-navy w-100" style="margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; border-radius: 8px;">
+                <a href="teacher-course-edit.php" class="btn btn-navy w-100" style="margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; border-radius: 8px; text-decoration: none;">
                     <i class="fa-solid fa-plus-circle"></i> Create New Course
-                </button>
+                </a>
                 <nav class="sidebar-nav">
                     <a href="#" class="sidebar-link">
                         <i class="fa-solid fa-circle-question"></i> Support
@@ -138,12 +148,12 @@
                     </div>
 
                     <div class="quick-actions-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 2.5rem;">
-                        <div class="action-card bg-white shadow" style="padding: 1.5rem; border-radius: 12px; text-align: center; cursor: pointer;">
+                        <a href="teacher-course-edit.php" class="action-card bg-white shadow" style="padding: 1.5rem; border-radius: 12px; text-align: center; cursor: pointer; text-decoration: none; color: inherit;">
                             <div class="action-icon" style="width: 48px; height: 48px; border-radius: 50%; background: #e0e7ff; color: var(--navy); display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.2rem;">
                                 <i class="fa-solid fa-plus-square"></i>
                             </div>
                             <h4 class="text-navy" style="font-size: 0.95rem;">Create New Course</h4>
-                        </div>
+                        </a>
                         <div class="action-card bg-white shadow" style="padding: 1.5rem; border-radius: 12px; text-align: center; cursor: pointer;">
                             <div class="action-icon" style="width: 48px; height: 48px; border-radius: 50%; background: #e0f2fe; color: #0284c7; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.2rem;">
                                 <i class="fa-solid fa-cloud-arrow-up"></i>
@@ -160,58 +170,43 @@
 
                     <!-- Active Courses -->
                     <div class="section-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                        <h3 class="text-navy" style="font-size: 1.2rem;">Active Courses</h3>
-                        <a href="#" style="color: var(--navy); font-size: 0.9rem; font-weight: 600; text-decoration: none;">View All Courses</a>
+                        <h3 class="text-navy" style="font-size: 1.2rem;">Your Courses</h3>
                     </div>
 
                     <div class="active-courses-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-bottom: 2.5rem;">
+                        <?php
+                        $stmt = $pdo->prepare('SELECT * FROM courses WHERE instructor_id = ? ORDER BY created_at DESC');
+                        $stmt->execute([$_SESSION['user_id'] ?? 0]);
+                        $my_courses = $stmt->fetchAll();
 
-                        <!-- Course Card 1 -->
-                        <div class="course-card bg-white shadow" style="border-radius: 12px; overflow: hidden;">
-                            <div class="course-img" style="height: 140px; background: url('https://images.unsplash.com/photo-1555448248-2571daf6344b?auto=format&fit=crop&q=80&w=800') center/cover; position: relative; display:flex; align-items:flex-end; padding: 1rem;">
-                                <span class="badge" style="background: #bbf7d0; color: #166534; padding: 4px 10px; border-radius: 20px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.5px;">IN PROGRESS</span>
+                        if (empty($my_courses)):
+                        ?>
+                            <div style="grid-column: 1 / -1; text-align: center; padding: 3rem; background: white; border-radius: 12px;" class="shadow text-gray">
+                                <p>You haven't created any courses yet.</p>
+                                <a href="teacher-course-edit.php" class="btn btn-navy" style="margin-top: 1rem; display: inline-block; text-decoration: none;">Create Your First Course</a>
                             </div>
-                            <div class="course-info" style="padding: 1.5rem;">
-                                <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 0.8rem;">Advanced UX Research</h4>
-                                <div style="display: flex; gap: 1.5rem; font-size: 0.85rem; color: var(--gray-dark); margin-bottom: 1.5rem;">
-                                    <span><i class="fa-solid fa-users"></i> 245 Students</span>
-                                    <span><i class="fa-solid fa-star"></i> 4.9 Rating</span>
+                        <?php else: ?>
+                            <?php foreach ($my_courses as $c): ?>
+                            <div class="course-card bg-white shadow" style="border-radius: 12px; overflow: hidden;">
+                                <div class="course-img" style="height: 140px; background: url('<?php echo htmlspecialchars($c['image_url'] ?: 'https://images.unsplash.com/photo-1555448248-2571daf6344b?auto=format&fit=crop&q=80&w=800'); ?>') center/cover; position: relative; display:flex; align-items:flex-end; padding: 1rem;">
                                 </div>
-                                <div>
-                                    <div style="display: flex; justify-content: space-between; font-size: 0.75rem; font-weight: 600; color: var(--gray-dark); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.5px;">
-                                        <span>Course Progress</span>
-                                        <span>75%</span>
+                                <div class="course-info" style="padding: 1.5rem;">
+                                    <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 0.8rem;"><?php echo htmlspecialchars($c['title']); ?></h4>
+                                    <p class="text-gray" style="font-size: 0.85rem; margin-bottom: 1rem; height: 40px; overflow: hidden;"><?php echo htmlspecialchars(substr($c['description'], 0, 100)) . '...'; ?></p>
+                                    <div style="display: flex; gap: 1.5rem; font-size: 0.85rem; color: var(--gray-dark); margin-bottom: 1.5rem;">
+                                        <span><i class="fa-solid fa-tag"></i> $<?php echo number_format($c['price'], 2); ?></span>
                                     </div>
-                                    <div class="progress-bar-bg" style="height: 6px; background: var(--gray-light); border-radius: 3px;">
-                                        <div class="progress-bar-fill" style="height: 100%; width: 75%; background: var(--green); border-radius: 3px;"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Course Card 2 -->
-                        <div class="course-card bg-white shadow" style="border-radius: 12px; overflow: hidden;">
-                            <div class="course-img" style="height: 140px; background: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800') center/cover; position: relative; display:flex; align-items:flex-end; padding: 1rem;">
-                                <span class="badge" style="background: #bbf7d0; color: #166534; padding: 4px 10px; border-radius: 20px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.5px;">IN PROGRESS</span>
-                            </div>
-                            <div class="course-info" style="padding: 1.5rem;">
-                                <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 0.8rem;">Cognitive Psychology in Design</h4>
-                                <div style="display: flex; gap: 1.5rem; font-size: 0.85rem; color: var(--gray-dark); margin-bottom: 1.5rem;">
-                                    <span><i class="fa-solid fa-users"></i> 182 Students</span>
-                                    <span><i class="fa-solid fa-star"></i> 4.7 Rating</span>
-                                </div>
-                                <div>
-                                    <div style="display: flex; justify-content: space-between; font-size: 0.75rem; font-weight: 600; color: var(--gray-dark); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.5px;">
-                                        <span>Course Progress</span>
-                                        <span>42%</span>
-                                    </div>
-                                    <div class="progress-bar-bg" style="height: 6px; background: var(--gray-light); border-radius: 3px;">
-                                        <div class="progress-bar-fill" style="height: 100%; width: 42%; background: var(--green); border-radius: 3px;"></div>
+                                    <div style="margin-top: 1.5rem; display: flex; justify-content: space-between; align-items: center;">
+                                        <a href="teacher-course-edit.php?id=<?php echo $c['id']; ?>" class="btn btn-outline" style="padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.85rem; text-decoration: none;"><i class="fa-solid fa-pen" style="margin-right: 0.4rem;"></i> Edit</a>
+                                        <form method="POST" action="teacher-course-delete.php" style="margin:0;" onsubmit="return confirm('Delete this course?');">
+                                            <input type="hidden" name="course_id" value="<?php echo $c['id']; ?>">
+                                            <button type="submit" class="btn btn-outline" style="padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.85rem; color: #ef4444; border-color: #ef4444;"><i class="fa-solid fa-trash"></i> Delete</button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
+                            <?php endforeach; ?>
+                        <?php endif; ?>
                     </div>
 
                     <!-- Recent Student Activity -->

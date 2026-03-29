@@ -1,3 +1,9 @@
+<?php
+require_once 'config.php';
+require_once 'helpers.php';
+
+require_login();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,10 +34,8 @@
         </div>
         <div class="nav-right">
             <i class="fa-solid fa-bell icon-action"></i>
-            <i class="fa-solid fa-gear icon-action"></i>
-            <div class="profile-pic">
-                 <img src="https://i.pravatar.cc/150?img=11" alt="Profile" style="width:100%; height:100%; border-radius:50%;">
-            </div>
+            <span style="margin: 0 1rem; font-weight: 500;"><?php echo htmlspecialchars($_SESSION['name']); ?></span>
+            <a href="logout.php" class="btn btn-outline" style="text-decoration: none; padding: 0.5rem 1rem;">Logout</a>
         </div>
     </header>
 
