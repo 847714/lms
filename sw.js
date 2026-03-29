@@ -2,7 +2,9 @@ const CACHE_NAME = 'hybrid-app-cache-v1';
 const urlsToCache = [
   '/',
   '/index.php',
-  '/style.css',
+  '/leaderboard.php',
+  '/teacher-dashboard.php',
+  '/teacher-profile.php',
   '/app.js',
   '/manifest.json'
 ];
