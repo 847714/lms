@@ -1,0 +1,211 @@
+[Sun Mar 29 09:03:16 2026] PHP 8.3.6 Development Server (http://127.0.0.1:8080) started
+[Sun Mar 29 09:03:18 2026] 127.0.0.1:51044 Accepted
+[Sun Mar 29 09:03:18 2026] 127.0.0.1:51044 [200]: HEAD /login.php
+[Sun Mar 29 09:03:18 2026] 127.0.0.1:51044 Closing
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:54982 Accepted
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:54982 [200]: GET /login.php
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:54982 Closing
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:54998 Accepted
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55010 Accepted
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:54998 [200]: GET /style.css
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:54998 Closing
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55010 [200]: GET /app.js
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55010 Closing
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55020 Accepted
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55020 [200]: GET /sw.js
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55020 Closing
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55028 Accepted
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55030 Accepted
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55042 Accepted
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55028 [302]: GET /
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55028 Closing
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55030 [302]: GET /index.php
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55030 Closing
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55042 [302]: GET /leaderboard.php
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55042 Closing
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55044 Accepted
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55044 [200]: GET /login.php
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55044 Closing
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55048 Accepted
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55048 [200]: GET /login.php
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55048 Closing
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55054 Accepted
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55064 Accepted
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55054 [200]: GET /login.php
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55054 Closing
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55080 Accepted
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55064 [302]: GET /teacher-dashboard.php
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55064 Closing
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55080 [302]: GET /teacher-profile.php
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55080 Closing
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55088 Accepted
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55104 Accepted
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55088 [200]: GET /app.js
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55104 [200]: GET /login.php
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55104 Closing
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55088 Closing
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55110 Accepted
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55112 Accepted
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55110 [200]: GET /login.php
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55110 Closing
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55112 [200]: GET /manifest.json
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55112 Closing
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55124 Accepted
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55124 [302]: POST /login.php
+[Sun Mar 29 09:04:05 2026] 127.0.0.1:55124 Closing
+[Sun Mar 29 09:05:30 2026] 127.0.0.1:34406 Accepted
+[Sun Mar 29 09:05:30 2026] 127.0.0.1:34406 [200]: GET /login.php
+[Sun Mar 29 09:05:30 2026] 127.0.0.1:34406 Closing
+[Sun Mar 29 09:05:30 2026] 127.0.0.1:34416 Accepted
+[Sun Mar 29 09:05:30 2026] 127.0.0.1:34432 Accepted
+[Sun Mar 29 09:05:30 2026] 127.0.0.1:34416 [200]: GET /style.css
+[Sun Mar 29 09:05:30 2026] 127.0.0.1:34432 [200]: GET /app.js
+[Sun Mar 29 09:05:30 2026] 127.0.0.1:34416 Closing
+[Sun Mar 29 09:05:30 2026] 127.0.0.1:34432 Closing
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34434 Accepted
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34434 [200]: GET /sw.js
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34434 Closing
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34448 Accepted
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34460 Accepted
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34472 Accepted
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34448 [302]: GET /
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34448 Closing
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34460 [302]: GET /index.php
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34460 Closing
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34472 [302]: GET /leaderboard.php
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34472 Closing
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34476 Accepted
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34476 [200]: GET /login.php
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34476 Closing
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34486 Accepted
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34486 [200]: GET /login.php
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34486 Closing
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34502 Accepted
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34516 Accepted
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34502 [302]: GET /teacher-dashboard.php
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34502 Closing
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34516 [200]: GET /login.php
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34516 Closing
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34520 Accepted
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34520 [302]: GET /teacher-profile.php
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34520 Closing
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34524 Accepted
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34524 [200]: GET /login.php
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34524 Closing
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34526 Accepted
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34532 Accepted
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34526 [200]: GET /app.js
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34544 Accepted
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34526 Closing
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34532 [200]: GET /login.php
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34532 Closing
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34544 [200]: GET /manifest.json
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34544 Closing
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34550 Accepted
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34550 [302]: POST /login.php
+[Sun Mar 29 09:05:31 2026] 127.0.0.1:34550 Closing
+[Sun Mar 29 09:05:32 2026] 127.0.0.1:34566 Accepted
+[Sun Mar 29 09:05:32 2026] 127.0.0.1:34566 [200]: GET /sw.js
+[Sun Mar 29 09:05:32 2026] 127.0.0.1:34566 Closing
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54164 Accepted
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54164 [302]: GET /index.php
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54164 Closing
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54180 Accepted
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54180 [200]: GET /login.php
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54180 Closing
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54190 Accepted
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54190 [200]: GET /style.css
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54190 Closing
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54192 Accepted
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54192 [200]: GET /app.js
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54192 Closing
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54208 Accepted
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54208 [200]: GET /sw.js
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54208 Closing
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54222 Accepted
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54222 [302]: GET /
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54222 Closing
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54226 Accepted
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54242 Accepted
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54226 [302]: GET /index.php
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54226 Closing
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54242 [302]: GET /leaderboard.php
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54242 Closing
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54258 Accepted
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54258 [200]: GET /login.php
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54258 Closing
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54264 Accepted
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54264 [200]: GET /login.php
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54264 Closing
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54280 Accepted
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54288 Accepted
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54280 [200]: GET /login.php
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54280 Closing
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54288 [302]: GET /teacher-dashboard.php
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54288 Closing
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54298 Accepted
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54298 [302]: GET /teacher-profile.php
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54298 Closing
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54314 Accepted
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54322 Accepted
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54314 [200]: GET /login.php
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54314 Closing
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54322 [200]: GET /app.js
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54322 Closing
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54334 Accepted
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54348 Accepted
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54334 [200]: GET /manifest.json
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54348 [200]: GET /login.php
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54348 Closing
+[Sun Mar 29 09:06:58 2026] 127.0.0.1:54334 Closing
+[Sun Mar 29 09:08:54 2026] 127.0.0.1:46900 Accepted
+[Sun Mar 29 09:08:54 2026] 127.0.0.1:46900 [302]: GET /index.php
+[Sun Mar 29 09:08:54 2026] 127.0.0.1:46900 Closing
+[Sun Mar 29 09:08:54 2026] 127.0.0.1:46902 Accepted
+[Sun Mar 29 09:08:54 2026] 127.0.0.1:46902 [200]: GET /login.php
+[Sun Mar 29 09:08:54 2026] 127.0.0.1:46902 Closing
+[Sun Mar 29 09:08:54 2026] 127.0.0.1:46918 Accepted
+[Sun Mar 29 09:08:54 2026] 127.0.0.1:46920 Accepted
+[Sun Mar 29 09:08:54 2026] 127.0.0.1:46918 [200]: GET /style.css
+[Sun Mar 29 09:08:54 2026] 127.0.0.1:46920 [200]: GET /app.js
+[Sun Mar 29 09:08:54 2026] 127.0.0.1:46918 Closing
+[Sun Mar 29 09:08:54 2026] 127.0.0.1:46920 Closing
+[Sun Mar 29 09:08:54 2026] 127.0.0.1:46922 Accepted
+[Sun Mar 29 09:08:54 2026] 127.0.0.1:46922 [200]: GET /sw.js
+[Sun Mar 29 09:08:54 2026] 127.0.0.1:46922 Closing
+[Sun Mar 29 09:08:55 2026] 127.0.0.1:46926 Accepted
+[Sun Mar 29 09:08:55 2026] 127.0.0.1:46932 Accepted
+[Sun Mar 29 09:08:55 2026] 127.0.0.1:46948 Accepted
+[Sun Mar 29 09:08:55 2026] 127.0.0.1:46926 [302]: GET /
+[Sun Mar 29 09:08:55 2026] 127.0.0.1:46926 Closing
+[Sun Mar 29 09:08:55 2026] 127.0.0.1:46932 [302]: GET /index.php
+[Sun Mar 29 09:08:55 2026] 127.0.0.1:46932 Closing
+[Sun Mar 29 09:08:55 2026] 127.0.0.1:46948 [302]: GET /leaderboard.php
+[Sun Mar 29 09:08:55 2026] 127.0.0.1:46948 Closing
+[Sun Mar 29 09:08:55 2026] 127.0.0.1:46952 Accepted
+[Sun Mar 29 09:08:55 2026] 127.0.0.1:46952 [200]: GET /login.php
+[Sun Mar 29 09:08:55 2026] 127.0.0.1:46952 Closing
+[Sun Mar 29 09:08:55 2026] 127.0.0.1:46964 Accepted
+[Sun Mar 29 09:08:55 2026] 127.0.0.1:46964 [200]: GET /login.php
+[Sun Mar 29 09:08:55 2026] 127.0.0.1:46964 Closing
+[Sun Mar 29 09:08:55 2026] 127.0.0.1:46978 Accepted
+[Sun Mar 29 09:08:55 2026] 127.0.0.1:46994 Accepted
+[Sun Mar 29 09:08:55 2026] 127.0.0.1:46978 [200]: GET /login.php
+[Sun Mar 29 09:08:55 2026] 127.0.0.1:46978 Closing
+[Sun Mar 29 09:08:55 2026] 127.0.0.1:46994 [302]: GET /teacher-dashboard.php
+[Sun Mar 29 09:08:55 2026] 127.0.0.1:46994 Closing
+[Sun Mar 29 09:08:55 2026] 127.0.0.1:46998 Accepted
+[Sun Mar 29 09:08:55 2026] 127.0.0.1:47014 Accepted
+[Sun Mar 29 09:08:55 2026] 127.0.0.1:47026 Accepted
+[Sun Mar 29 09:08:55 2026] 127.0.0.1:46998 [302]: GET /teacher-profile.php
+[Sun Mar 29 09:08:55 2026] 127.0.0.1:46998 Closing
+[Sun Mar 29 09:08:55 2026] 127.0.0.1:47014 [200]: GET /login.php
+[Sun Mar 29 09:08:55 2026] 127.0.0.1:47014 Closing
+[Sun Mar 29 09:08:55 2026] 127.0.0.1:47026 [200]: GET /app.js
+[Sun Mar 29 09:08:55 2026] 127.0.0.1:47042 Accepted
+[Sun Mar 29 09:08:55 2026] 127.0.0.1:47026 Closing
+[Sun Mar 29 09:08:55 2026] 127.0.0.1:47056 Accepted
+[Sun Mar 29 09:08:55 2026] 127.0.0.1:47042 [200]: GET /login.php
+[Sun Mar 29 09:08:55 2026] 127.0.0.1:47042 Closing
+[Sun Mar 29 09:08:55 2026] 127.0.0.1:47056 [200]: GET /manifest.json
+[Sun Mar 29 09:08:55 2026] 127.0.0.1:47056 Closing
